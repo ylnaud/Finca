@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+<article class="post container">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ date | date('yyyy-MM-dd') }}">{{ date | date('dd/MM/yyyy') }}</time>
+      {% if tags %}<span class="tags">{{ tags | join(', ') }}</span>{% endif %}
+    </div>
+    <h1>{{ title }}</h1>
+    <p class="post-excerpt">{{ description }}</p>
+  </header>
+
+  <!-- Anuncio AdSense arriba del contenido -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="{{ site.adsense }}"
+      data-ad-slot="1234567890"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+
+  <!-- Anuncio AdSense al final -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="{{ site.adsense }}"
+      data-ad-slot="0987654321"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</article>
