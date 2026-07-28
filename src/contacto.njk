@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: Contacto - Reserva tu fecha
+description: Contacta con La Hacienda de los Sueños para consultar disponibilidad y reservar tu boda o evento.
+permalink: /contacto/
+---
+
+<section class="contacto container">
+  <h1>Hablemos de tu boda</h1>
+  <p class="subtitle">Cuéntanos qué tienes en mente y te respondemos en menos de 24 horas.</p>
+
+  <div class="grid-2" style="margin-top: 3rem; gap: 3rem;">
+    <div class="contacto-info">
+      <h2>Información de contacto</h2>
+      <ul class="contact-list">
+        <li>📞 <strong>Teléfono:</strong> +34 XXX XXX XXX</li>
+        <li>📧 <strong>Email:</strong> info@haciendadelossueños.com</li>
+        <li>📍 <strong>Dirección:</strong> Camino de la Hacienda s/n</li>
+        <li>🕐 <strong>Horario:</strong> Lunes a Sábado, 10h - 19h</li>
+      </ul>
+
+      <div style="margin-top: 2rem;">
+        <h3>¿Cómo llegar?</h3>
+        <p>A 20 minutos del centro, con fácil acceso desde la autovía. Parking gratuito para visitantes.</p>
+        <a href="https://maps.app.goo.gl/UTepe1eqechPXKFi7" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">
+          Ver en Google Maps
+        </a>
+      </div>
+    </div>
+
+    <div class="contacto-form">
+      <h2>Envíanos un mensaje</h2>
+      <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contacto">
+        <p style="display:none;"><input name="bot-field"></p>
+        <div class="form-group">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ana y Carlos">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="ana@email.com">
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha aproximada de la boda</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="form-group">
+          <label for="invitados">Número de invitados</label>
+          <select id="invitados" name="invitados">
+            <option value="">Selecciona...</option>
+            <option>Menos de 50</option>
+            <option>50 - 100</option>
+            <option>100 - 200</option>
+            <option>200 - 350</option>
+            <option>Más de 350</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos más</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tipo de evento, preguntas, etc."></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%;">Enviar consulta</button>
+      </form>
+    </div>
+  </div>
+</section>
