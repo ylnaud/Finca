@@ -152,19 +152,41 @@ img { max-width: 100%; display: block; }
   outline: none; border-color: #d4af7a;
 }
 
+
 /* === LEGAL === */
-.legal { padding: 3rem 0; max-width: 780px; }
+.legal { padding: 3rem 1.2rem; max-width: 780px; }
 .legal h1 { font-size: 2rem; margin-bottom: 0.5rem; }
 .legal h2 { font-size: 1.3rem; margin: 2rem 0 0.5rem; color: #1a1a1a; }
 .legal p, .legal li { color: #444; margin-bottom: 0.8rem; }
 .legal ul { margin-left: 1rem; }
 .legal a { color: #d4af7a; text-decoration: underline; }
-.cookie-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
-.cookie-table th { background: #1a1a1a; color: #d4af7a; padding: 0.7rem 1rem; text-align: left; }
-.cookie-table td { padding: 0.7rem 1rem; border-bottom: 1px solid #eee; }
+
+/* Tabla cookies responsive */
+.cookie-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.cookie-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.cookie-table th {
+  background: #1a1a1a; color: #d4af7a;
+  padding: 0.7rem 1rem; text-align: left;
+  white-space: nowrap;
+}
+.cookie-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
 .cookie-table tr:nth-child(even) td { background: #f9f9f9; }
-
-
 
 /* === FIX MÓVIL - márgenes === */
 .legal,
