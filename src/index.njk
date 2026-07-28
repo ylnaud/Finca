@@ -1,41 +1,94 @@
 ---
 layout: base.njk
-title: Finca de Bodas y Eventos
-description: La Hacienda de los Sueños, la finca ideal para tu boda o evento. Guías, consejos e inspiración para organizar la boda perfecta.
+title: Finca de Bodas en Gran Canaria - Valsequillo, Las Palmas
+description: Hacienda de los Sueños, finca de bodas en Valsequillo, Gran Canaria. Cascada de 5 metros, piscina, jardines y alojamiento. Ganadora Wedding Awards 2026. Desde 4.000€.
 ---
 
 <section class="hero">
   <div class="container">
-    <h1>Tu boda perfecta comienza aquí</h1>
-    <p>Guías, consejos e inspiración para organizar el día más especial de tu vida en un entorno único.</p>
-    <a href="/finca/" class="btn">Conoce la Finca</a>
-    <a href="/blog/" class="btn btn-outline">Ver Guías de Boda</a>
+    <p class="hero-eyebrow">🏆 Ganadora Wedding Awards 2023, 2025 y 2026</p>
+    <h1>La finca de bodas más especial de Gran Canaria</h1>
+    <p>Cascada de 5 metros, 1.000 m² de césped natural, piscina y alojamiento en Valsequillo, Las Palmas. Más de 90 bodas celebradas con una valoración de 4.9 sobre 5.</p>
+    <a href="/contacto/" class="btn">Consultar disponibilidad</a>
+    <a href="/finca/" class="btn btn-outline">Conocer la finca</a>
+  </div>
+</section>
+
+<section class="awards container">
+  <div class="awards-grid">
+    <div class="award-item">⭐ 4.9/5 en Bodas.net</div>
+    <div class="award-item">💍 +90 bodas celebradas</div>
+    <div class="award-item">🏆 Wedding Awards 2026</div>
+    <div class="award-item">👥 14 a 140 invitados</div>
   </div>
 </section>
 
 <section class="features container">
-  <h2>¿Por qué La Hacienda de los Sueños?</h2>
+  <h2>Un entorno único en Las Palmas</h2>
   <div class="grid-3">
     <div class="card">
-      <span class="icon">🌿</span>
-      <h3>Entorno natural</h3>
-      <p>Rodeada de naturaleza para una boda íntima y especial.</p>
+      <span class="icon">💧</span>
+      <h3>Cascada de 5 metros</h3>
+      <p>Altar único en Las Palmas: una cascada de agua de 5 metros de altura rodeada de 1.000 m² de césped natural.</p>
     </div>
     <div class="card">
-      <span class="icon">✨</span>
-      <h3>Servicio completo</h3>
-      <p>Catering, decoración y coordinación en un solo lugar.</p>
+      <span class="icon">🏊</span>
+      <h3>Piscina y jardines</h3>
+      <p>Zona de piscina y jardines ideales para el cocktail al atardecer con vistas a la montaña.</p>
     </div>
     <div class="card">
-      <span class="icon">📸</span>
-      <h3>Espacios únicos</h3>
-      <p>Rincones mágicos para fotos y recuerdos inolvidables.</p>
+      <span class="icon">🛏️</span>
+      <h3>6 habitaciones + suite</h3>
+      <p>6 dormitorios dobles y suite nupcial para que los novios y familia más cercana se alojen en la finca.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🍽️</span>
+      <h3>Catering libre</h3>
+      <p>Sin exclusividad de catering. Trae a tu propio proveedor o elige entre los recomendados.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🎵</span>
+      <h3>Sin límite de hora</h3>
+      <p>Sin límite horario y sin exclusividad de música. La fiesta dura lo que tú decidas.</p>
+    </div>
+    <div class="card">
+      <span class="icon">🎯</span>
+      <h3>Un solo evento al día</h3>
+      <p>Exclusividad total. Solo se celebra un evento por día para que todo sea tuyo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reviews container">
+  <h2>Lo que dicen las parejas</h2>
+  <div class="grid-3">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"La finca es un verdadero sueño en todos los aspectos. Desde el minuto uno han estado pendientes y dispuestos a ayudarnos en todo."</p>
+      <strong>— Paqui, septiembre 2025</strong>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Miguel, Tatiana y todo su equipo desde el minuto uno estuvieron atentos a todos los detalles. La coordinación fue increíble."</p>
+      <strong>— Jocelyne, noviembre 2025</strong>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"No tengo palabras para describir la decisión de casarnos aquí. Precioso, acogedor y no faltaba detalle."</p>
+      <strong>— Sara, julio 2025</strong>
+    </div>
+  </div>
+  <div class="rating-badge">
+    <span class="rating-num">4.9</span>
+    <div>
+      <div class="stars">★★★★★</div>
+      <p>37 opiniones · 98% lo recomiendan</p>
     </div>
   </div>
 </section>
 
 <section class="blog-preview container">
-  <h2>Últimas guías de boda</h2>
+  <h2>Guías para organizar tu boda en Gran Canaria</h2>
   <div class="grid-2">
     {% for post in collections.blog | slice(0, 4) %}
     <article class="card-post">
@@ -48,4 +101,12 @@ description: La Hacienda de los Sueños, la finca ideal para tu boda o evento. G
     {% endfor %}
   </div>
   <a href="/blog/" class="btn">Ver todas las guías</a>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2>¿Tu fecha está disponible?</h2>
+    <p>Solo celebramos un evento al día. Consulta sin compromiso.</p>
+    <a href="/contacto/" class="btn">Solicitar información</a>
+  </div>
 </section>
