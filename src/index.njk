@@ -1,0 +1,51 @@
+---
+layout: base.njk
+title: Finca de Bodas y Eventos
+description: La Hacienda de los Sueños, la finca ideal para tu boda o evento. Guías, consejos e inspiración para organizar la boda perfecta.
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Tu boda perfecta comienza aquí</h1>
+    <p>Guías, consejos e inspiración para organizar el día más especial de tu vida en un entorno único.</p>
+    <a href="/finca/" class="btn">Conoce la Finca</a>
+    <a href="/blog/" class="btn btn-outline">Ver Guías de Boda</a>
+  </div>
+</section>
+
+<section class="features container">
+  <h2>¿Por qué La Hacienda de los Sueños?</h2>
+  <div class="grid-3">
+    <div class="card">
+      <span class="icon">🌿</span>
+      <h3>Entorno natural</h3>
+      <p>Rodeada de naturaleza para una boda íntima y especial.</p>
+    </div>
+    <div class="card">
+      <span class="icon">✨</span>
+      <h3>Servicio completo</h3>
+      <p>Catering, decoración y coordinación en un solo lugar.</p>
+    </div>
+    <div class="card">
+      <span class="icon">📸</span>
+      <h3>Espacios únicos</h3>
+      <p>Rincones mágicos para fotos y recuerdos inolvidables.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog-preview container">
+  <h2>Últimas guías de boda</h2>
+  <div class="grid-2">
+    {% for post in collections.blog | slice(0, 4) %}
+    <article class="card-post">
+      <a href="{{ post.url }}">
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.data.description }}</p>
+        <span class="read-more">Leer más →</span>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+  <a href="/blog/" class="btn">Ver todas las guías</a>
+</section>
