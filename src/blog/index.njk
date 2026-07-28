@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Guías de Boda
+description: Todas las guías, consejos y listas para organizar tu boda perfecta paso a paso.
+permalink: /blog/
+---
+
+<section class="blog-index container">
+  <h1>Guías de Boda</h1>
+  <p>Todo lo que necesitas saber para organizar la boda de tus sueños.</p>
+
+  <div class="grid-2">
+    {% for post in collections.blog %}
+    <article class="card-post">
+      <a href="{{ post.url }}">
+        <time>{{ post.date | date('dd/MM/yyyy') }}</time>
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.description }}</p>
+        <span class="read-more">Leer más →</span>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
