@@ -1,7 +1,11 @@
 {
-  "name": "La Hacienda de los Sueños",
-  "url": "https://tudominio.netlify.app",
-  "description": "La finca de bodas y eventos más especial de la región. Guías, consejos e inspiración para tu boda perfecta.",
-  "author": "La Hacienda de los Sueños",
-  "adsense": "ca-pub-XXXXXXXXXXXXXXXX"
+  "name": "Hacienda de los Sueños",
+  "url": "https://haciendadelossueños.netlify.app",
+  "description": "Finca de bodas y eventos en Valsequillo, Gran Canaria. Cascada de 5 metros, 1.000 m² de césped, piscina y alojamiento. Ganadora Wedding Awards 2026.",
+  "author": "Hacienda de los Sueños",
+  "adsense": "ca-pub-XXXXXXXXXXXXXXXX",
+  "telefono": "+34 XXX XXX XXX",
+  "email": "info@haciendadelossuenos.com",
+  "direccion": "El Cercadillo, 17, 35217 Valsequillo (Telde), Las Palmas",
+  "maps": "https://maps.app.goo.gl/UTepe1eqechPXKFi7"
 }
